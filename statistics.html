@@ -1,0 +1,25 @@
+<DOCTYPE html>
+    <html lang="en" dir="ltr">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
+    
+    <head>
+        <meta charset="utf-8" />
+        <title>Flask Parent Template</title>
+        <link rel="stylesheet" href="{{url_for('static', filename='css/template.css')}}" />
+    </head>
+    <body>
+        {% extends "template.html" %}
+        {% block content %}
+        <header>
+            <div class="container">
+                <h1 class="logo">Welcome To My Website</h1>
+            
+                <!-- As a link-->
+                <nav class="navbar navbar-light bg-light">
+                    <a class="navbar-brand" href="#">Statistics</a>
+                </nav>
+            </div>
+        </header>
+        {% endblock %}
+    </body>
+    </html>
